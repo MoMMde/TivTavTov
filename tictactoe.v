@@ -3,8 +3,8 @@ module main
 import os
 
 const (
-	grid_length       = 3 // For design purposes this will be rendered times 2
-	grid_width        = 3
+	grid_length       = 9 // For design purposes this will be rendered times 2
+	grid_width        = 6
 	length_until_win  = 3
 	max_players       = 2
 	player_characters = r'123456789abcdefghijklmnopqrstuvwxyz' // players will use [players length - 1]
@@ -163,6 +163,6 @@ mut game := Game {
 
 println('== Starting game ==')
 println('Players = ${game.players.len}')
-println('Grid = ${game.grid.len}x${game.grid[0].len}')
+println('Grid = ${game.grid[0].len}x${game.grid.len}')
 
 run_tick(mut game)
