@@ -1,2 +1,0 @@
-v tictactoe.v
-./tictactoe
